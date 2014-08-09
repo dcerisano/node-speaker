@@ -22,7 +22,7 @@
 
 #include "debug.h"
 
-#define FIFO_DURATION		(0.5f)		/* Duration of the ring buffer in seconds */
+#define FIFO_DURATION		(0.025f)		/* Duration of the ring buffer in seconds */
 
 
 typedef struct mpg123_coreaudio
