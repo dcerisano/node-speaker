@@ -19,7 +19,7 @@
 	Generally, BUFFER_SIZE < 8k || NUM_BUFFERS > 16 || NUM_BUFFERS < 4 are not recommended.
 */
 #define BUFFER_SIZE 8192 
-#define NUM_BUFFERS 4  /* total 512k roughly 2.5 sec of CD quality sound */
+#define NUM_BUFFERS 4  /* total 32k roughly 0.18 sec of CD quality stereo sound */
 
 /* Buffer ring queue state */
 struct queue_state
