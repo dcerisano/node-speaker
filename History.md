@@ -1,23 +1,51 @@
 
+0.2.5 / 2015-04-15
+==================
+
+  * package: update "bindings" to v1.2.1
+  * package: update "nan" to v1.7.0
+  * appveyor: test node v0.12, don't test v0.11
+  * travis: test node v0.12, don't test v0.11
+
+0.2.4 / 2015-02-20
+==================
+
+  * update "nan" to v1.6.2
+  * update binding.cc for node v0.12 / iojs support (#47, @mrinalvirnave)
+
+0.2.3 / 2015-02-20
+==================
+
+  * link pulse-simple when using mpg123 "pulse" backend (#48, @ReneHollander)
+
+0.2.2 / 2015-01-13
+==================
+
+  * example: make sine.js produce 220hz, not 440hz (#38, @jproulx)
+  * package: update "mocha" to v2.1.0
+  * package: allow any "debug" v2
+  * package: add "bugs" and "homepage" fields
+  * travis: remove unused "matrix" field
+
 0.2.1 / 2014-07-07
 ==================
 
- * src: call open() and close() on the dummy audio_output_t instance (#36)
- * README: document the `float` format option
+  * src: call open() and close() on the dummy audio_output_t instance (#36)
+  * README: document the `float` format option
 
 0.2.0 / 2014-06-22
 ==================
 
- * gitignore: ignore root-level dev files
- * index: pass the `format` directly to the native open() binding
- * index: ensure a valid and supported "format" is given to Speaker instance
- * test: add quotes to test names
- * index: add `getFormat()` and `isSupported()` functions
- * binding: export the `MPG123_ENC_*` constants
- * binding: export the result of `get_formats()`
- * mpg123: add 64-bit float playback support for CoreAudio backend
- * index: use %o formatter some more
- * index: default `float` to 32-bit `bitDepth`
+  * gitignore: ignore root-level dev files
+  * index: pass the `format` directly to the native open() binding
+  * index: ensure a valid and supported "format" is given to Speaker instance
+  * test: add quotes to test names
+  * index: add `getFormat()` and `isSupported()` functions
+  * binding: export the `MPG123_ENC_*` constants
+  * binding: export the result of `get_formats()`
+  * mpg123: add 64-bit float playback support for CoreAudio backend
+  * index: use %o formatter some more
+  * index: default `float` to 32-bit `bitDepth`
 
 0.1.3 / 2014-06-15
 ==================
