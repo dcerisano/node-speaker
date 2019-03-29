@@ -22,8 +22,8 @@
     This is similar to BUFFER_LENGTH in alsa.c
 
 */
-#define BUFFER_SIZE 0.5*1024
-#define NUM_BUFFERS 4
+#define BUFFER_SIZE 1024
+#define NUM_BUFFERS 8
 
 
 static void wait_for_buffer(WAVEHDR* hdr, HANDLE hEvent);
