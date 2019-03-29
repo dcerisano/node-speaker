@@ -17,13 +17,14 @@
 /*
     Buffer size and number of buffers in the playback ring
     The following values are for fast short notifiers
-    that require near realtime buffering (0.5Kx4).
+    that require near real-time buffering (0.5Kx4).
     For HD audio streams, use larger values (8Kx8)
     This is similar to BUFFER_LENGTH in alsa.c
 
 */
-#define BUFFER_SIZE 512
+#define BUFFER_SIZE 0.5*1024
 #define NUM_BUFFERS 4
+
 
 static void wait_for_buffer(WAVEHDR* hdr, HANDLE hEvent);
 static void drain_win32(struct audio_output_struct *ao);
