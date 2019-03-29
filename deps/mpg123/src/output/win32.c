@@ -16,12 +16,14 @@
 
 /*
     Buffer size and number of buffers in the playback ring
-    NOTE: This particular num/size combination performs best under heavy
-    loads for my system, however this may not be true for any hardware/OS out there.
-    Generally, BUFFER_SIZE < 8k || NUM_BUFFERS > 16 || NUM_BUFFERS < 4 are not recommended.
+    The following values are for fast short notifiers
+    that require near realtime buffering (0.5Kx4).
+    For HD audio streams, use larger values (8Kx8)
+    This is similar to BUFFER_LENGTH in alsa.c
+
 */
-#define BUFFER_SIZE 8192
-#define NUM_BUFFERS 4  /* total 32k roughly 0.18 sec of CD quality stereo sound */
+#define BUFFER_SIZE 512
+#define NUM_BUFFERS 4
 
 static void wait_for_buffer(WAVEHDR* hdr, HANDLE hEvent);
 static void drain_win32(struct audio_output_struct *ao);
