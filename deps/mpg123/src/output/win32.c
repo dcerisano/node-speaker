@@ -24,7 +24,7 @@
 
 */
 #define BUFFER_SIZE 1024
-#define NUM_BUFFERS 5
+#define NUM_BUFFERS 16
 
 
 static void wait_for_buffer(WAVEHDR* hdr, HANDLE hEvent);
